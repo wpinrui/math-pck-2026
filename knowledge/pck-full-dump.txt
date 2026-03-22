@@ -1,0 +1,1125 @@
+# QCM52/53 Study Sheet — Lecture 1 & 2
+
+---
+
+## LECTURE 1: Teaching Approaches & Learning Theories (Yeo)
+
+### Core Philosophy
+- You teach **students**, not maths — care about whether they learn, not just content delivery
+- Teaching ≠ talking; ensuring another person learns is **harder than doing it yourself**
+
+### Skemp's Two Types of Understanding (1976)
+| Type | Definition |
+|------|-----------|
+| **Relational** | Knowing *what* to do AND *why* |
+| **Instrumental** | Rules without reasons |
+
+- Instrumental understanding = students can't adapt when they forget rules
+- Relational understanding → easier to reconstruct forgotten knowledge
+
+### Why Rules Without Understanding Fail
+- Students at lower readiness cannot memorise unrelated rules indefinitely
+- Understanding helps retention and recall after forgetting
+
+### Constructivism (Piaget)
+- Brain links new knowledge to **existing knowledge (schema)**
+- Weak links = easily forgotten
+- **Assimilation**: fitting new info into existing schema (no change to schema)
+- **Accommodation**: changing existing schema to fit new info
+- Key idea: students **construct** their own knowledge — they are not empty vessels
+
+### Skemp's Principle of Learning Maths (1987)
+> Higher-order concepts cannot be taught by definition — only by **suitable examples**
+
+- Start with examples, guide to definition — not the reverse
+- Definition-first confuses unmotivated students and confirms their fears
+
+### Guided-Discovery Learning (Bruner)
+- Guide students to **discover** and **generalise** concepts so they construct knowledge meaningfully
+- Can be teacher-centred (whole class) or student-centred (worksheets)
+- Overlaps concept development with process development
+
+### Teaching Processes
+- Teach **heuristics** explicitly when going through worked examples or problems
+- E.g. for trig identities: start from more complex side; think what identities apply; work backwards if stuck
+- Basic knowledge must be memorised to enable thinking (Schoenfeld)
+
+### Metacognition
+- Thinking about thinking: **awareness, monitoring, self-regulation**
+- Get students to **reflect** at end of every lesson
+- Even one durable takeaway per lesson is sufficient
+
+### Pentagon Model (2020 — Yeo's version)
+Centre: **Mathematical Problem Solving**
+Five components: Concepts · Skills · Processes · Metacognition · Dispositions/Attitudes
+
+---
+
+## LECTURE 2: Singapore Mathematics Curriculum (Sun)
+
+### Curriculum Types
+| Type | Description |
+|------|-------------|
+| **Intended** | National syllabus (MOE) |
+| **Planned** | School-level scheme of work, materials |
+| **Enacted** | What teacher actually teaches in class |
+| **Experienced** | What students actually learn |
+
+### Curriculum Development (Oliva & Gordon, 2013)
+Plan → Design → Implement → Evaluate *(cyclic in Singapore)*
+
+### Key Features of Singapore Curriculum
+- **Spiral curriculum**: maths is hierarchical; content built across levels sequentially
+- **Connected syllabuses**: G1/G2/G3 cater to different student abilities
+
+### Goals / Orientations / Aims
+- **Goals**: mastery for everyday life; able to pursue further maths education
+- **Orientations**: maths as a *tool* (solving real problems) + maths as a *discipline* (understanding nature of maths)
+- **Aims**: concepts & skills; processes & metacognition; positive attitudes
+
+### Nature of Mathematics — 4 Themes
+1. Properties & Relationships
+2. Representations & Communications
+3. Operations & Algorithms
+4. Abstractions & Applications
+
+### 8 Big Ideas
+Functions · Invariance · Notations · Diagrams · Measures · Equivalence · Proportionality · Models
+
+**Top 3 (lecturer's view):**
+- **Proportionality** — underpins fractions, rates, similarity, probability, etc.
+- **Equivalence** — sameness across representations (fractions, algebra, functions)
+- **Functions** — relationships; predict how quantities affect each other
+
+### Pentagon Framework — 2028 Change
+- **Attitudes** → replaced by **Dispositions**
+- Dispositions: curiosity, creativity, **adaptability**, confidence, perseverance, appreciation
+- Rationale: align with **21CC (CAIT)** and **STEM (3C)**
+
+### Syllabus Organisation
+- **Concepts & Skills**: Numbers & Algebra | Geometry & Measurement | Statistics & Probability
+- **Learning Experiences**: embed Processes, Metacognition, Attitudes/Dispositions
+
+### What is a Mathematical Problem?
+- No immediate procedure available
+- Solver must *accept* it and *attempt* to solve it
+- Requires desire/motivation
+
+### Pólya's Problem-Solving Strategy
+1. Understand the problem
+2. Devise a plan
+3. Carry out the plan
+4. Check and expand *(non-linear — can loop back)*
+
+### Learning Maths & Problem Solving (3 modes)
+| Mode | Vehicle |
+|------|---------|
+| Learning maths **through practice** | Exercises |
+| Learning maths **through** problem solving | Hard problems |
+| Learning maths **for** problem solving | Applications |
+| Learning **about** problem solving | Problem-solving skills explicitly taught |
+
+
+================================================================================
+
+
+# QCM Study Sheet — Teaching Approaches (Pt 2) & ICT in Maths
+
+---
+
+## LECTURE 4: Teaching Approaches & Learning Theories (Part 2)
+
+### Bruner's C-P-A Approach
+- **Concrete → Pictorial → Abstract** (hyphens = links between stages, not 3 separate methods)
+- Start with concrete manipulatives (e.g. algebra tiles), move to pictorial, then abstract identity
+- Visual > proof for convincing students (Key Lesson 1)
+- Suitable for **lower-readiness** students — not starting with abstract proofs
+
+### Extended C-P-A Approach
+- When no suitable concrete manipulative exists, use **concrete examples (numbers)**
+- Pri: real objects → pictures → numerals | Sec: numbers → (pictures) → algebra | Uni: algebra IS concrete
+- What is abstract at one level becomes concrete at a higher level
+- Key Lesson 2: **Always go from concrete/examples → abstract**
+
+### Teaching Skills (Behaviourism, modified)
+- Rooted in **behaviourism** (Thorndike, Skinner, Gagné) — stimulus-response bonds
+- Modified by constructivism: meaningfulness matters, not just S-R conditioning
+- Structure: **"We do one. You do more."**
+  - WE1 done together (teacher questions students) → Practice Q1 similar to WE1 (leave WE1 on board)
+  - Q2 onwards: slight increase in structure/difficulty
+  - Introduce WE2 when most students can't handle next practice question
+- **Copying WEs**: wastes time; Practice Q1 serves as model solution instead
+- **Homework**: similar difficulty to WEs/practice (not harder); can add 1–2 challenge Qs at end
+- Key Lesson 3: **There must be structure/progression in WEs, practice Qs, and HW**
+
+### Attitudes & Dispositions
+- **Beliefs → Confidence → Perseverance**: students who believe maths = <5 min will give up
+  - Counter by sharing real examples (your own uni experience) + encouraging perseverance
+- **Interest/Appreciation**: use *variety* of resources; aim for at least one interesting part per lesson
+  - LOVE framework: Linking Opportunities in a Variety of Experiences to learning of Maths
+  - Must always link engaging activity back to mathematics
+- Key Lesson 4: **Engage students' hearts by making some parts of lessons interesting**
+
+---
+
+## ICT LECTURE: Use of ICT in Maths Education
+
+### MOE ICT Masterplans (background)
+- mp1 (1997–2002): basic IT infrastructure + teacher IT competency
+- mp2 (2003–2008): dynamic curriculum using technology; baseline IT standards for students
+- mp3 (2009–2014): ICT at the **heart** of education — integrated in lesson planning, not an add-on
+
+### How to Use ICT
+| Use | Notes |
+|---|---|
+| **NOT** PPT for step-by-step working | Students can't follow; can't ask questions along the way |
+| Whiteboard for working | Step-by-step + questioning |
+| PPT for colourful pictures | e.g. types of pyramids |
+| **Explore concepts** (GSP/GeoGebra/LiveMath) | Guided-discovery (Bruner) using pre-designed templates |
+| Visual aids | e.g. GSP demo of unit circle → sine curve |
+| Teaching aids / emulators | e.g. show calculator key presses |
+| Virtual manipulatives | e.g. balance for solving equations (handles negatives) |
+| E-learning (interactive) | JavaSketchpad, GeoGebra web — content must be interactive, not just text |
+| Teacher tools | Equation Editor, FXDraw3 for preparing worksheets/papers |
+| Internet resources | Songs, videos to engage students |
+
+- **8 Ways**: puzzles/games/songs/videos · pictures · explore concepts · visual aids · teaching aids · virtual manipulatives · e-learning · prepare materials
+- Give students **pre-designed templates** — designing them wastes time on technical aspects, not maths
+- **Hands-on > demo** where possible; demo is appropriate when content is too difficult to explore
+
+### Why Use ICT?
+- Bruner CPA: "The computer has the ability to make the abstract concrete" (Turkle & Papert, 1990)
+- ICT **bridges the gap** between abstract concepts and concrete experiences
+- Key Lesson 2: **Use ICT only when it enhances student learning** (e.g. making abstract more concrete); if it doesn't help, don't use it
+
+### When to Use ICT?
+- Only when it **helps student learning**
+- Do NOT use if concrete manipulatives work better
+- Balance: use different modes of teaching — impossible to let students discover everything
+
+### Planning & Conducting an ICT Lesson
+- Visit computer lab **a few days before**: test teacher + student computers
+- Visit again **day/lesson before**: confirm equipment still works
+- Try out template + worksheet beforehand — fix problems before lesson
+- **Conduct**: gather students at front → demo difficult parts → hands-on → demo → hands-on (2-period = 2 segments)
+- **Conclude**: gather again to consolidate and verify correct discoveries
+- Key Lesson 3: **Must visit the computer lab at least a few days before your first ICT lesson**
+
+### Overarching Principle
+> Your duty is not to teach *per se*, but to teach so that **student learning** takes place. Use ICT purposefully to enhance that learning.
+
+
+================================================================================
+
+
+# Big Ideas & Proportionality — Study Sheet
+
+## Orientations to Math Learning
+- **Tool**: use math to solve problems; content chosen for real-world value
+- **Discipline**: understand the nature of math; content chosen to illustrate mathematicians' thinking
+- Every syllabus has both; N(T) leans tool, A-Math leans discipline
+
+## Nature of Mathematics (PORA)
+| Theme | Category |
+|---|---|
+| Properties & Relationships | Concepts |
+| Operations & Algorithms | Skills |
+| Representations & Communications | Processes |
+| Abstractions & Applications | Processes |
+
+## Big Ideas
+- Central ideas that **link** topics, strands, and levels into a coherent whole (Charles, 2005)
+- 8 clusters (Sec): **I**nvariance, **F**unctions, **D**iagrams, **N**otations, **P**roportionality, **M**easures, **M**odels, **E**quivalence
+- Primary: 6 clusters (exclude Functions & Models) — **IMPEND**
+- "Proportionality" = a **cluster** of big ideas; teach by forming **statements about** a big idea
+
+---
+
+## Ratio
+- Compares **relative sizes** of ≥2 quantities of the **same kind**
+  - Same kind = numbers OR measurements with convertible units (e.g. cm & m; NOT cm & g)
+- Notation a : b has **no units**; write map scale as 1 : 10 000, not 1 cm : 100 m
+- Distinguish **concept of ratio** from **ratio notation** a : b
+- New definition: a : b where **a, b > 0**
+- If a quantity = 0, it is meaningless to use ratio
+
+## Rate
+- Measures how one quantity **varies with** another (same or different kinds)
+- Rate = y/x; if constant → expressed as "y per n units of x"
+- **Rate** y/x ≠ **Rate of change** dy/dx in general (equal only when line passes through origin)
+- Types: constant rate, step rate, progressive rates, irregular rates
+- Rate always compares **two** quantities only
+
+## Ratio vs. Rate
+| | Ratio | Rate |
+|---|---|---|
+| Same kind, 2 quantities | ✓ | ✓ (interconvertible) |
+| Same kind, ≥3 quantities | ✓ | ✗ |
+| Different kinds, 2 quantities | ✗ | ✓ |
+
+- Ratio a : b (2 quantities) → rate a/b (fraction); vice versa
+- Rate comparing same-kind quantities **can** be converted to ratio
+- Rate comparing different-kind quantities **cannot** become ratio
+- Writing as rate standardises base (= 1), making comparison easier across groups
+
+---
+
+## Proportion
+- **Part-whole ratio**: proportion of boys = 3/5 or 60%
+- **Part-part ratio**: ratio of boys to girls = 3 : 2
+- **Proportionality** (mathematical): a relationship between two quantities — distinct from the above
+
+## Direct Proportion
+**Equivalent statements** (all mean y ∝ x):
+1. When x × n → y × n (multiplicative reasoning)
+2. Equality of two ratios: y₂/y₁ = x₂/x₁
+3. Equality of two rates: y₂/x₂ = y₁/x₁
+4. Rate y/x = **constant** k (constant of proportionality)
+5. y = kx (line through origin); rate of change dy/dx AND rate y/x both = k
+
+> Additive reasoning (constant difference) is NOT sufficient for direct proportion
+
+- Direct proportion is a **special case** of linear relation y = kx + c where **c = 0**
+
+## Inverse Proportion
+- y = k/x; equivalently xy = k (constant **product**)
+- When x × n → y **÷** n
+- Equality of two ratios: y₂/y₁ = x₁/x₂
+- Equality of two rates: y₂/x₁ = y₁/x₂
+- Rate y/x is **NOT** constant; product xy is constant
+
+---
+
+## Proportionality Across the Curriculum
+| Topic | Big Idea Statement |
+|---|---|
+| Fractions/%, Ratio, Rate | Different representations of proportional relationship |
+| Similar triangles | Corresponding sides directly proportional |
+| Trigonometry | sin x = opp/hyp constant because similar triangles |
+| Bar/pie chart | Bar length / sector area directly proportional to frequency |
+| Histogram | Column **area** directly proportional to frequency |
+| Unitary method | Applies proportional reasoning without equality of ratios |
+
+---
+
+## Unpacking Content — Pedagogical Reasoning (Shulman, 1987)
+**6 Aspects:** Comprehension → Transformation → Instruction → Evaluation → Reflection → New Comprehension
+
+### Transformation (unpack content first, then choose approach)
+| Sub-aspect | What it involves |
+|---|---|
+| **Preparation** | Critically interpret materials; detect errors of omission/commission |
+| **Representation** | Analogies, examples, demos to make ideas accessible |
+| **Selection** | Choose instructional approach (lecture, discovery, etc.) |
+| **Adaptation** | Tailor to students' prior knowledge, misconceptions, language |
+
+> Selection & adaptation come **after** unpacking content — not before
+
+### 5 Elements of Math Content (Backhouse et al., 1992)
+| Element | How to teach |
+|---|---|
+| **Concept** | Explain or develop |
+| **Convention** | Just tell (no "why") |
+| **Result** | Can be proven |
+| **Technique** | Demonstrate with worked examples |
+| **Process** | Provide thinking opportunities |
+
+**Key proverb:** *Docendo discimus* — "by teaching, we learn"
+
+
+================================================================================
+
+
+# QCM Tutorial Notes — Arithmetic & Algebra
+
+---
+
+## Arithmetic 1 — Numbers
+
+### Syllabus Context
+- 3 content strands: Numbers & Algebra · Geometry & Measurement · Statistics & Probability
+- 1 process strand: Mathematical Processes
+- MOE increasing emphasis on processes — learning experiences (LE) now embedded in textbooks
+- N1 (Sec 1 Numbers & Operations) tags: P = Processes, M = Metacognition, A = Attitudes
+
+### Classification of Numbers — Key Pedagogical Points
+- **Whole numbers vs natural numbers**: one contains 0, the other doesn't — know which; find tricks to help students remember
+- **Positive integers vs non-negative integers**: cleaner, more precise terminology across contexts
+- **Even numbers, negative numbers**: students may give correct answers for wrong reasons — get them to *articulate* the definition
+- **Perfect squares/cubes**: same issue — ask students to explain, not just identify
+- **Rational numbers**: know the definition; know how to prove √2 is irrational
+- **Decimal types**: terminating vs non-terminating; recurring vs non-recurring
+- **Complex numbers**: real numbers ⊂ complex numbers; imaginary ≠ complex
+
+### Four Operations — Procedural Understanding
+- Do students understand *why* long multiplication works? (e.g. why add a zero when multiplying tens?)
+- The **distributive law** underlies both long multiplication and the partial quotient algorithm
+- Opportunity to surface and address procedural gaps carried over from primary school
+
+---
+
+## Arithmetic 2 — Primes, HCF, LCM
+
+### Definition of Prime Numbers
+Three candidate definitions:
+
+| Definition | Problem |
+|---|---|
+| "A whole number divisible by 1 and itself" | Incomplete — 1 satisfies this but is not prime |
+| "A whole number **greater than 1** divisible by 1 and itself" | Correct but verbose |
+| "A whole number with **exactly two** different factors" | Clean and precise — preferred |
+
+- The word **exactly** is critical — "at least" changes the meaning entirely
+- Analogy: old syllabus trapezium had *exactly* one pair of parallel sides; new syllabus uses *at least* — this changes which shapes qualify and affects the formula ½(a+b)h
+
+### Conceptual Tests (use in class)
+- **Stmt 1**: "If a positive integer is not prime, then it must be composite." T/F? Why?
+  - False — 1 is neither prime nor composite
+- **Stmt 2**: "6 is a composite number." T/F? Why?
+  - True — has more than two factors
+
+### Sieve of Eratosthenes
+- Purpose: sieve out primes from a list
+- **Cannot be used to *introduce* primes** — students need to already know 1 is not prime, and need to understand why uncancelled numbers are prime (still requires factor reasoning)
+- Practical note: students are messy — always print a template for them
+
+### Is a Given Number Prime? (Trial Division)
+- Divide by each prime up to √n — if none divide exactly, the number is prime
+- Rationale: factors come in pairs; if n has a factor > √n, its pair must be < √n, so it would already have been found
+- Perfect squares: last factor pair is the same factor (√n × √n)
+- This reasoning is beyond most students — teach the procedure, not the proof
+
+### Fundamental Theorem of Arithmetic
+Every positive integer > 1 is either prime or can be expressed as a **unique** product of primes.
+
+### Number of Divisors Formula
+If n = p₁^e₁ × p₂^e₂ × … × pₙ^eₙ, then:
+
+**Total number of positive divisors = (1+e₁)(1+e₂)…(1+eₙ)**
+
+Example: 48 = 2⁴ × 3¹ → (1+4)(1+1) = 10 divisors
+
+### HCF & LCM — Choice of Examples
+- **Bad opening example for HCF**: HCF(6, 12) — students may think HCF is always the smaller number
+- **Good opening example**: HCF(4, 7) — HCF is 1, challenges assumption
+- **Bad opening example for LCM**: LCM(4, 7) — students may think LCM is always the product
+- Edge-case examples must still appear during class practice — just not as the first example
+
+### Calculator Trick for HCF
+To find HCF(12936, 1260):
+1. Compute 12936 ÷ 1260 on calculator — simplifies to 154/15
+2. Calculator divided both by their HCF automatically
+3. Recover HCF: 1260 ÷ 15 = **84**
+
+### Questioning Technique
+- **Choral response**: acceptable when NOT testing for understanding (e.g. recapping)
+- **Testing for understanding**: call a specific student
+- **Sequence**: ask question → pause ~3 seconds → *then* nominate student
+  - If you nominate first, other students stop thinking
+
+### Design of Questions
+- Reverse the usual question format to test conceptual understanding
+  - E.g. give partial outcome, ask for missing initial info (instead of giving info, asking for outcome)
+
+---
+
+## Arithmetic 3 — Negative Numbers
+
+### Why Not Rules-Only Teaching
+- Negative numbers are among the **most difficult** topics (alongside percentages and fractions)
+- Memorising sign rules without understanding leads to misconceptions, especially for lower-readiness students
+- Rules (e.g. positive × negative = negative) should be the *last* step, not the first
+
+### Introducing Negative Numbers
+**Good real-life contexts:**
+- Temperature below 0
+- Owing money / deficit / decrease
+- Below sea level
+
+**Contexts to avoid:**
+- Basement floors (B1, B2) — no zero floor
+- BC/AD — no year zero
+
+### Number Line
+- Numbers to the right are larger — use this to answer "is −3 bigger than −2?"
+- Distinguish operator **minus** (subtraction) from state **negative**:
+  - 0 − 2 = −2: read as "zero *minus* two equals *negative* two"
+
+### Algebra Discs — The Five Key Concepts
+Teach with algebra discs (concrete) before moving to rules. Teach **one concept + practice** before moving to the next. Do NOT use algebra to generalise during disc teaching — too much cognitive load.
+
+| Concept | Example | Key Idea |
+|---|---|---|
+| Addition of two negatives | (−2) + (−3) = −5 | Combine negative discs |
+| Addition of positive and negative | 5 + (−2) = 5 − 2 | Zero pairs cancel |
+| Subtraction between two positives | 3 − 5 = −(5−3) = −2 | Need to add zero pairs |
+| Subtracting positive from negative | −3 − 4 = −(3+4) = −7 | Add more negatives |
+| Subtraction of a negative | 5 − (−2) = 5 + 2 | Removing negatives = adding positives |
+
+### Lesson Structure for Negative Numbers
+1. Teach one concept with discs
+2. Class practice on that concept
+3. Move to next concept
+4. Consolidate: recap all 5 on whiteboard
+5. Mixed practice (not arranged in order — students must identify which concept applies)
+6. Optional: consolidation puzzle (e.g. secret message — each letter maps to an expression)
+
+### Extension to Algebra
+Same five concepts apply:
+- (−2x) + (−3x) = −5x
+- 5x + (−2x) = 5x − 2x
+- 3x − 5x = −2x
+- 5x − (−2x) = 5x + 2x
+
+**Note**: lower-readiness students find it harder to transfer from integers to fractions — anticipate this.
+
+### Teaching Multiplication of Negative Numbers
+Use disc-flipping model (pictorial is sufficient — no need for physical discs):
+- Start: flipping 1 disc gives −1
+- Case 1: 2 × 3 — 2 groups of 3
+- Case 2: 2 × (−3) — 2 groups of −3
+- Case 3: (−3) × 2 — *negative* of 3 groups of 2
+- Case 4: (−3) × (−2) — *negative* of 3 groups of −2
+
+**Mental heuristic (sign rules) is the last step** — never open with it.
+
+---
+
+## Arithmetic 4 — Percentages
+
+### Common Misconceptions
+- **Wrong working**: 5/20 = 5/20 × 100 = 25 ⇒ 5/20 = 25 = 25% — must mark this wrong; the expression 5/20 ≠ 25
+- **Expressing 0.5% as a fraction**: students confuse 0.5% with 0.5; correct: 0.5% = 0.5/100 = 1/200
+- **Base of percentage change**: students frequently identify the 100% (base) incorrectly
+  - Profit/loss questions should specify whether to express as % of cost price or selling price
+- **Average of percentages**: cannot average percentages unless the bases are equal
+
+---
+
+## Algebra 1 — Introduction
+
+### Uses of a Letter in Algebra
+| Use | Example |
+|---|---|
+| Specific unknown | Price of apple = x (one fixed unknown value) |
+| Variable | y = 2x + 1 (x ranges over values) |
+| Parameter | m, c in y = mx + c (fixed for a given line, varies across lines) |
+
+### Types of Algebraic Statements
+| Type | Example | Notes |
+|---|---|---|
+| Conditional equation | x + 1 = 0 | True for some values of x |
+| Contradiction | x + 1 = x | True for no values |
+| Identity | 2x + 3x = 5x | True for all values |
+| Function / relation | f(x) = x + 1 or y² = x | Relationship between variables |
+
+### Misconception: Equal Sign
+- Students often treat = as "do something to get an answer" — not as equivalence
+- This is a **conceptual** misconception, not a presentation issue
+- Teach using a balance (physical or virtual) to show equality as balance
+
+### Solving Equations
+- Meaning: find value(s) of x such that substituting x makes the equality hold
+- Must be stated explicitly — students often solve mechanically without understanding what they are doing
+
+---
+
+## Algebra 2 — Expansion & Factorisation
+
+### Syllabus Scope
+| Level | Content |
+|---|---|
+| Sec 1 | Expand a(b+c), −a(b+c); factorise ab+ac; solve linear equations incl. simple fractional; word problems |
+| Sec 2 | Expand (a+b)(c+d), algebraic identities; factorise by grouping, quadratic expressions; algebraic fractions; simultaneous linear equations; linear inequalities; graphs of linear equations; solve quadratic by factorisation |
+
+- Note: ab (degree 2, two variables) appears in Sec 1; x² (degree 2, one variable) appears in Sec 2
+
+### Action Words in Algebra
+**Expand · Simplify · Factorise · Solve** — students must distinguish these; they are different tasks
+
+### Teaching Expansion of a(b+c)
+Three approaches:
+
+**C-P-A with tiles:**
+- Concrete: physical rectangular tiles/cutouts representing a × (b+c)
+- Pictorial: draw the tiles
+- Abstract: generalise to a(b+c) = ab + ac
+- If pictorial is sufficient, skip concrete
+
+**Algebra discs extension:**
+- 2 × 3 = 6 → extend to 2 groups of (x+3)
+- Examples and practice → generalise
+
+**Multiplication frame:**
+- Handles negative numbers and minus signs — unlike area model
+- More versatile than rectangular tile approach
+
+### Teaching Factorisation
+- Taught as the **reverse of expansion**
+- Students must identify and extract the HCF of terms
+- Harder case: −2x − 6 — need to change sign after extracting −2
+  - Algebra discs help: flip the discs to show sign change
+  - Multiplication frame also handles this
+
+### Quadratic Factorisation (Sec 2)
+- Lower-readiness students often cannot see how to factorise quadratics
+- Algebra discs: start with all-positive cases, then extend to other cases
+- In ax² + bx + c, must state **a ≠ 0**
+
+
+================================================================================
+
+
+# QCM Tutorial Notes — Graphs, Functions & Coordinate Geometry
+
+---
+
+## Graphs 1 — Functions & Introduction to Coordinate Geometry
+
+### Why Graphs?
+- Graphs link **algebra** and **geometry** together
+- Graphs are part of **Coordinate Geometry** (a branch of geometry)
+- Quote: *"Algebra is but written geometry and geometry is but figured algebra."* — Sophie Germain (1776–1831)
+- Only **Cartesian coordinates** are in the secondary school syllabus (invented by René Descartes, 1596–1650)
+
+### Cartesian Coordinates vs Ordered Pairs
+- **Ordered pair**: any pair of numbers where order matters — e.g. Cartesian (x, y), polar (r, θ), event outcomes (H, T)
+- **Cartesian coordinates**: a specific type of ordered pair
+- Correct grammar: *"The coordinates of P are (2, 3)"* — not "is"
+
+---
+
+## Concept of Function
+
+### Syllabus (LE N6b, Sec 1, p.43)
+- Function = **"only one output for every input"**
+- Represent functions in 4 forms:
+  - **Verbal**: say or write in words
+  - **Tabular**: table of values
+  - **Graphical**: plot the graph
+  - **Algebraic**: equation of function
+
+### Teaching with a Function Machine
+- Use a function machine to generate input/output values
+- Helps students build intuition before formal definition
+- Resources: www.shodor.org/interactivate, www.mathplayground.com/functionmachine
+
+---
+
+## Drawing on Graph Paper
+
+### Problem Areas
+- Students may not know what scale to use
+- Without a given scale, students tend to draw very small graphs
+- **Always give students the scale, domain, and range** — teaching them to choose scale is a separate skill; don't conflate the two
+
+### Orientating Students to Graph Paper
+Three shades of green lines:
+| Lines | Size |
+|---|---|
+| Darkest/thickest | 2 cm × 2 cm squares |
+| Medium | 1 cm × 1 cm squares |
+| Lightest | 2 mm × 2 mm squares |
+
+### Drawing Axes
+- Draw axes on the **darkest green line** — easier to read off values (next darkest line = y = 1 or y = 2 depending on scale)
+- **One arrow per axis**, at the positive end (local convention — some countries use arrows at both ends)
+- Label axes x and y
+
+### How to Teach Graph Drawing
+Teach and practise **one skill at a time**:
+1. Draw axes → practise
+2. Label numbers with scale on axes → practise
+3. Plot points → practise
+4. Join points → practise
+
+---
+
+## Graphs of Linear Functions
+
+### Syllabus Note — y = ax + b vs y = mx + c
+- Sec 1 syllabus uses **y = ax + b**, not y = mx + c
+- Students learn *a* = gradient in Sec 1
+- Students learn *b* = y-intercept only in **Sec 3** (p.53, G6.3)
+- Therefore: **do not teach y-intercept meaning of b in Sec 1** — it's not in scope yet
+- Most textbooks use y = mx + c and link c to y-intercept; most teachers don't realise this is a Sec 3 concept
+
+### Spiral Curriculum
+- Teach concepts appropriate to the level; revisit at the next level with more depth
+- Do **not** bring Sec 3 content down to Sec 1/2
+- Different from a modular curriculum (teach everything in one module at one level)
+
+### Exploring Graphs Using Desmos (LE N6c)
+- Use sliders at www.desmos.com for y = mx + c
+- Keep *m* constant, vary *c* — observe vertical shift
+- Keep *c* constant, vary *m* — observe change in steepness
+- Start with m > 0, then introduce m < 0
+
+---
+
+## Interpretation of Graphs
+
+### Common Misconception — Graph as Visual Representation
+- **Misconception**: a graph is a visual/pictorial representation of a situation
+- Example: students asked to draw "height of flag vs time during flag-raising" may draw a **vertical line** (it looks like a flagpole)
+- **Correct understanding**: a graph is an **abstract representation** of the *relationship between two variables*, not a picture of the situation
+
+### C-P-A and Graphs
+- In C-P-A, it is acceptable to treat graphs as "pictorial" and equations as "abstract"
+- But be aware: graphs are not truly visual — they are abstract representations of relationships
+- Both are abstractions; graphs are just more visually accessible
+
+---
+
+## Gradient (Sec 1)
+
+### Developing the Concept
+- Draw two line segments with the **same horizontal change** but **different vertical changes**
+- Guide students to see that steepness differs because of different vertical changes over the same horizontal change
+- Lead to: **gradient = rise / run** (ratio of vertical change to horizontal change)
+
+### Worked Example Sequence for Sec 1
+Students are always given a **graph with two points** to calculate gradient.
+
+| WE | Setup | Purpose |
+|---|---|---|
+| WE1 | One point at origin, other in 1st quadrant | Simplest case; skip for stronger classes |
+| WE2 | Both points in 1st quadrant, positive gradient | e.g. (1,2) and (5,8) |
+| WE3 | Both points in 1st quadrant, negative gradient | Introduce negative gradient |
+| WE4 | One point has negative coordinates | Extend to other quadrants |
+
+- After each WE, students practise a **similar question first** before progressing
+- Apply **Differentiated Instruction** across WEs
+
+### Additional Gradient Skills to Teach
+- **No points given on line**: guide students to choose 2 suitable points themselves — this must be explicitly taught and practised
+- **Non-homogeneous scale**: students must know that lines with the same gradient can *look* different if axes have different scales — show examples
+
+### Real-Life Gradient vs Mathematical Gradient
+- In real life, gradient is usually positive
+- Common misconception: going *up* a hill = positive gradient; going *down* = negative gradient
+- **Correction**: gradient has the same sign regardless of direction of travel — it depends on the line, not the walker
+
+### Gradient of Special Lines
+- **Horizontal line**: gradient = 0
+- **Vertical line**: gradient = undefined
+- Students commonly confuse the two and call a horizontal line a "straight line" — clarify that all lines are straight; horizontal is a specific type
+
+---
+
+## Gradient Formula (Sec 3)
+
+### Teaching the Formula
+- Use the same WE2: (1, 2) and (5, 8)
+- Write x₁, y₁ above (1, 2) and x₂, y₂ above (5, 8) on the graph
+- Link rise = y₂ − y₁ and run = x₂ − x₁ to what students already know from Sec 1
+
+### Label Left Point as (x₁, y₁)
+- Does it matter which point is labelled (x₁, y₁)? — **No**, formula gives same answer either way
+- But convention: label the **left point** as (x₁, y₁) to ensure run = x₂ − x₁ > 0
+
+### Common Problems
+- Students substitute wrong values — always write formula before substituting; label coordinates explicitly
+- Negative coordinates cause arithmetic errors — encourage use of calculator
+
+### Teaching Negative Gradient with Formula
+1. Students practise finding positive gradient using formula
+2. Ask: does the formula work for negative gradient?
+3. If students say yes → skip WE, go straight to practice
+4. If unsure → show example, e.g. (1, 5) and (5, 1):
+   - Label left point (x₁, y₁) → run = x₂ − x₁ is positive
+   - Draw triangle **above** the line segment for negative gradient
+   - Show why rise = y₂ − y₁ is negative
+
+---
+
+## Length of Line Segment (Sec 3, Coordinate Geometry p.53)
+
+### Developing the Formula
+- Scaffold using a right-angled triangle formed by the two points
+- Apply Pythagoras' theorem: distance = √[(x₂−x₁)² + (y₂−y₁)²]
+- Students should derive this — do not just give the formula
+
+---
+
+## Graphs of Quadratic Functions (Upper Sec)
+
+### Syllabus (N6, p.50)
+- Sketch graphs of y = ±(x−p)² + q and y = ±(x−a)(x−b)
+- Coefficient of x² = ±1 (but can explore other coefficients)
+
+### Plotting vs Sketching
+- **Sketching ≠ rough freehand** — still need scale in some cases to ensure correct shape (e.g. quadratic must be symmetrical)
+- To sketch, must find **critical points**:
+  - y-intercept
+  - x-intercepts (roots)
+  - Turning point
+
+### Factorised Form y = ±(x−h)(x−k)
+
+#### x-intercepts
+- Do **not** teach "x-intercepts are h and k" directly
+- Students will make sign errors: e.g. for y = (x+1)(x+5), they may say x-intercepts are 1 and 5
+- Better: just **solve (x+1)(x+5) = 0** to find x-intercepts
+- Note: x-intercepts are **numerical values**, not coordinates
+
+#### y-intercept
+- Substitute x = 0 into equation
+
+#### Turning Point
+- Lies on the **line of symmetry**, which is midway between the two x-intercepts
+- x-coordinate of turning point = average of the two x-intercepts
+- Link to primary school: average = total ÷ 2 (even-out model)
+- Example: y = (x−1)(x−5) → x-intercepts 1 and 5 → turning point x = (1+5)/2 = 3
+- Harder example: y = (x+2)(x−3) → x-intercepts −2 and 3 → turning point x = (−2+3)/2 = 0.5
+- Substitute x-coordinate into equation to find y-coordinate of turning point
+- Drawing line of symmetry on sketch is optional
+
+### Completed Square Form y = ±(x−p)² + q (Sec 3)
+- Covered in Sec 3 O-level Maths where coefficient of x² = 1 (N7.10, p.54)
+- Typical question: "Express x² − 4x + 1 in the form (x−a)² + b. Hence, sketch y = x² − 4x + 1."
+- Critical points found from completed square form directly
+
+---
+
+## Po-Shen Loh's Method for Quadratic Equations
+
+### Background
+- Developed by A/P Loh Po-Shen, Carnegie Mellon University; US IMO national coach
+- Reference: www.poshenloh.com/quadratic
+
+### Method (for x² + Bx + C = 0)
+1. Sum of roots = −B; product of roots = C
+2. Average of roots = −B/2
+3. Roots are (−B/2 − u) and (−B/2 + u) — symmetric about line of symmetry
+4. Product: (−B/2 − u)(−B/2 + u) = C → (−B/2)² − u² = C → solve for u
+5. Recover both roots
+
+**Example**: x² − 6x + 5 = 0
+- Sum = 6, average = 3; roots are 3−u and 3+u
+- (3−u)(3+u) = 5 → 9 − u² = 5 → u² = 4 → u = ±2
+- Roots: x = 1 and x = 5
+
+### Pedagogy Note
+- Suitable for **high-progress students** as enrichment — not a replacement for standard methods
+- Students should be aware that multiple methods exist
+- Weaker parts: finding u from the product equation may still trip students up
+
+### Sum and Product of Roots (No Longer in 2020 A-Math Syllabus)
+To develop intuitively (without formal formulae):
+- Expand (x−2)(x−3) = x² − 5x + 6
+- Observe: sum of roots 2+3 = 5 = **negative of coefficient of x**
+- Observe: product of roots 2×3 = 6 = **constant term**
+
+
+================================================================================
+
+
+# QCM PCK Test — Study Sheet
+
+---
+
+## L1 · Singapore Mathematics Curriculum (Sun)
+
+### Curriculum Types
+| Type | Description |
+|---|---|
+| **Intended** | National syllabus (MOE) |
+| **Planned** | School-level scheme of work, materials |
+| **Enacted** | What teacher actually teaches |
+| **Experienced** | What students actually learn |
+
+Development is cyclic: Plan → Design → Implement → Evaluate. Gaps between each level are where learning breaks down.
+
+### Pentagon Model (2020)
+**Centre:** Mathematical Problem Solving
+**5 Components:** Concepts · Skills · Processes · Metacognition · Dispositions
+
+- **Attitudes → Dispositions** (from 2028): aligns with 21CC (CAIT) and STEM (3C)
+- Dispositions: curiosity, creativity, **adaptability**, confidence, perseverance, appreciation
+- Dispositions are *active, habitual orientations* — not just how students feel
+
+### Goals & Orientations
+- **Tool orientation**: maths to solve real-world problems (e.g. N(T) leans tool)
+- **Discipline orientation**: understand the nature of maths (e.g. A-Math leans discipline)
+- Every syllabus has both
+
+### Nature of Mathematics (PORA)
+| Theme | Category |
+|---|---|
+| Properties & Relationships | Concepts |
+| Operations & Algorithms | Skills |
+| Representations & Communications | Processes |
+| Abstractions & Applications | Processes |
+
+---
+
+## L2 · Teaching Approaches & Learning Theories 1 (Yeo)
+
+### Skemp's Two Types of Understanding (1976)
+| Type | Definition |
+|---|---|
+| **Relational** | Knowing *what* to do AND *why* |
+| **Instrumental** | Rules without reasons |
+
+- Instrumental: students can't adapt or reconstruct when they forget
+- Relational: enables reconstruction from understanding; more durable
+
+### Constructivism (Piaget)
+- Brain links new knowledge to **existing schema**; weak links = easily forgotten
+- **Assimilation**: new info fits existing schema (no change to schema)
+- **Accommodation**: schema must change to fit new info
+- Students **construct** their own knowledge — not empty vessels
+
+### Skemp's Principle (1987)
+> Higher-order concepts cannot be taught by definition — only by **suitable examples**
+
+- Always: **examples first → definition after** (never reverse)
+- Definition-first confirms fear that maths is incomprehensible
+
+### Metacognition
+- Thinking about thinking: **awareness, monitoring, self-regulation**
+- Build in reflection at end of every lesson; one durable takeaway per lesson is enough
+
+---
+
+## L3 · Use of ICT in Mathematics Education (Yeo)
+
+### Why Use ICT?
+> "The computer has the ability to make the abstract concrete." — Turkle & Papert (1990)
+
+ICT bridges abstract concepts and concrete experience (Bruner CPA logic). Use ICT **only when it genuinely enhances student learning** — if manipulatives work better, use those.
+
+### 8 Ways to Use ICT
+1. Puzzles / games / songs / videos (engagement — must link back to maths)
+2. Pictures (e.g. types of pyramids)
+3. **Explore concepts** — GeoGebra, GSP, LiveMath with pre-designed templates
+4. Visual aids (e.g. GSP unit circle → sine curve)
+5. Teaching aids / emulators (e.g. calculator key presses)
+6. Virtual manipulatives (e.g. balance scale for equations)
+7. E-learning — must be **interactive**, not just text
+8. Prepare materials — Equation Editor, FXDraw3
+
+### Key Rules
+- **No PPT for worked examples** — students can't follow; can't ask questions. Use whiteboard.
+- PPT is fine for pictures (type 2)
+- Give students **pre-designed templates** — building them wastes time on technical aspects, not maths
+- **Hands-on > demo**; demo only when content too difficult to explore independently
+
+### Planning an ICT Lesson
+- Visit computer lab **a few days before**: test all computers
+- Visit again **day/lesson before**: confirm still working
+- Try template + worksheet yourself first
+- **Conduct**: gather at front → demo → hands-on → demo → hands-on
+- **Conclude**: gather to consolidate and verify correct discoveries
+
+### LOVE Framework
+**L**inking **O**pportunities in a **V**ariety of **E**xperiences to the learning of maths.
+Vary resources to engage students, but always **explicitly link the activity back to mathematics**. Engagement is not the end goal; maths is.
+
+---
+
+## L4 · Teaching Approaches & Learning Theories 2 (Yeo)
+
+### Bruner's C-P-A Approach
+**Concrete → Pictorial → Abstract** (hyphens = linked stages, not 3 separate methods)
+
+- Concrete: physical manipulatives (e.g. algebra tiles, balance scales)
+- Pictorial: diagrams, bar models, graphs
+- Abstract: symbolic notation, algebra
+
+### Extended C-P-A
+When no physical manipulative exists, use **concrete examples (numbers)** as the concrete stage.
+
+| Level | "Concrete" means |
+|---|---|
+| Primary | Real objects |
+| Secondary | Numbers |
+| University | Algebra |
+
+What is abstract at one level becomes concrete at a higher level. **Always: concrete/examples → abstract. Never start with abstraction.**
+
+### Teaching Skills Structure ("We do one. You do more.")
+Rooted in **behaviourism** (Thorndike, Skinner, Gagné) but modified by constructivism — meaningfulness matters.
+
+1. **WE1** — done together; teacher questions students; leave WE1 on board
+2. **Practice Q1** — similar to WE1; WE1 still visible (replaces copying)
+3. **Practice Q2+** — slight increase in difficulty/structure
+4. **WE2** — introduced when most students can't handle next level; then repeat cycle
+
+- **Homework**: similar difficulty to WEs/practice; 1–2 challenge Qs at end only
+- **Copying WEs**: wastes time; Practice Q1 is the model solution
+- Must be **deliberate structure and progression** across WEs, practice, and HW
+
+### Attitudes & Dispositions
+- **Beliefs → Confidence → Perseverance**: students who think maths = <5 min give up early
+- Share real struggle examples; encourage perseverance
+- Use variety of resources; aim for at least one interesting part per lesson (LOVE)
+
+---
+
+## L5 · Unpacking Content in Lesson Planning (Yeo)
+
+### Shulman's Pedagogical Reasoning (1987)
+**6-stage cycle:** Comprehension → **Transformation** → Instruction → Evaluation → Reflection → New Comprehension
+
+*Docendo discimus* — "by teaching, we learn"
+
+### Transformation — The Core Teaching Act (4 Sub-aspects)
+| Sub-aspect | What it involves |
+|---|---|
+| **Preparation** | Critically interpret materials; detect errors of omission/commission |
+| **Representation** | Analogies, examples, demos to make ideas accessible |
+| **Selection** | Choose instructional approach (lecture, discovery, ICT, etc.) |
+| **Adaptation** | Tailor to students' prior knowledge, misconceptions, language |
+
+**Critical sequence**: Preparation → Representation → Selection → Adaptation. Unpack content *first*, then choose method. Never choose method before understanding content.
+
+### Backhouse's 5 Elements of Mathematical Content (1992)
+| Element | What it is | How to teach |
+|---|---|---|
+| **Concept** | Idea or relationship | Explain or develop (guided discovery) |
+| **Convention** | Arbitrary agreement | Just tell — no "why" |
+| **Result** | Theorem or property | Can be proven — show or derive |
+| **Technique** | Procedure or algorithm | Demonstrate with worked examples |
+| **Process** | Way of thinking | Provide thinking opportunities |
+
+- **Convention**: most commonly mishandled — teachers try to explain "why"; there is no why
+- **Process**: most commonly neglected — cannot be taught by demo; students must do the thinking
+
+---
+
+## L6 · Big Ideas in Mathematics (Yeo)
+
+### What are Big Ideas?
+Central ideas that **link topics, strands, and levels** into a coherent whole (Charles, 2005). Taught by forming **statements about** a big idea — not by defining the big idea itself.
+
+### 8 Secondary Clusters (IF DN PM ME) - if doing nothing PM me
+**F**unctions · **I**nvariance · **N**otations · **D**iagrams · **P**roportionality · **M**easures · **M**odels · **E**quivalence
+^ Oops, the above order is wrong for the mnemonic.
+
+Primary: 6 clusters — exclude Functions & Models
+
+**Top 3 (lecturer's view):** Proportionality · Equivalence · Functions
+
+### Ratio
+- Compares **relative sizes** of ≥2 quantities of the **same kind**
+- Same kind = numbers or convertible units (cm & m ✓; cm & g ✗)
+- Notation a : b has **no units**; write map scale as 1 : 10 000 not 1 cm : 100 m
+- New definition: a, b > 0 — ratio is meaningless if a quantity = 0
+
+### Rate
+- Measures how one quantity **varies with** another (same or different kinds)
+- Always compares **exactly two** quantities; rate = y/x
+- Rate (y/x) ≠ Rate of change (dy/dx) — equal only when line passes through origin
+- Writing as rate standardises base to 1 — easier to compare across groups
+
+### Ratio vs Rate
+| | Ratio | Rate |
+|---|---|---|
+| Same kind, 2 quantities | ✓ | ✓ (interconvertible) |
+| Same kind, ≥3 quantities | ✓ | ✗ |
+| Different kinds, 2 quantities | ✗ | ✓ |
+
+### Direct Proportion (y ∝ x) — 5 Equivalent Statements
+1. x × n → y × n (multiplicative reasoning)
+2. y₂/y₁ = x₂/x₁ (equality of two ratios)
+3. y₂/x₂ = y₁/x₁ (equality of two rates)
+4. y/x = k (constant of proportionality)
+5. y = kx (line through origin; dy/dx = y/x = k)
+
+> **Additive reasoning (constant difference) ≠ direct proportion**
+
+Direct proportion is a special case of y = kx + c where **c = 0**
+
+### Inverse Proportion
+- y = k/x; equivalently **xy = k** (constant product)
+- x × n → y ÷ n
+- Rate y/x is NOT constant; **product** xy is constant
+
+### Proportionality Across the Curriculum
+| Topic | Connection |
+|---|---|
+| Fractions, %, ratio, rate | Different representations of same proportional relationship |
+| Similar triangles | Corresponding sides directly proportional |
+| Trigonometry | sin x = opp/hyp constant because of similar triangles |
+| Bar/pie charts | Bar length / sector area proportional to frequency |
+| Histogram | Column **area** (not height) proportional to frequency |
+| Unitary method | Proportional reasoning without formally writing equality of ratios |
+
+---
+
+## Problem Solving (L2 + Pentagon)
+
+### What is a Mathematical Problem?
+- No immediate procedure available
+- Solver must **accept** it (engage willingly) and **attempt** it (requires motivation)
+- Distinguishes a *problem* from an *exercise*
+
+### Polya's 4-Step Strategy
+1. **Understand** the problem — what is given, unknown, conditions?
+2. **Devise a plan** — select a heuristic
+3. **Carry out the plan** — execute; loop back if it fails
+4. **Check and expand** — verify answer; reflect; consider extensions
+
+Process is **non-linear** — looping is expected.
+
+### Heuristics (taught explicitly)
+Draw a diagram · Work backwards · Look for a pattern · Solve a simpler problem · Make a list/table · Guess and check
+
+> Basic knowledge must be **memorised** to free cognitive capacity for heuristic thinking (Schoenfeld)
+
+### 4 Modes of Learning Maths
+| Mode | Vehicle |
+|---|---|
+| Through **practice** | Exercises — consolidate known procedures |
+| **Through** problem solving | Hard problems — struggle builds new understanding |
+| **For** problem solving | Applications — content learned then applied |
+| **About** problem solving | Explicit teaching of heuristics and strategies |
+
+
+================================================================================
+
+
+PRACTICE QUESTIONS & MODEL ANSWERS (synthesised from material)
+
+SAMPLE Q1 [2m]: Explain prime numbers to Sec 1.
+- [1m] Definition: "exactly two different factors." Not "divisible by 1 and itself."
+- [1m] Examples: 2,7,13. Non-examples: 1 (one factor, neither prime nor composite), 6 (composite). Test: "not prime → composite?" No, 1 is neither.
+
+SAMPLE Q2 [4m]: Student writes (x+y)²=x²+y².
+- (a)[1m] Distributed exponent over addition — overgeneralised.
+- (b)[1m] Extended CPA: x=1,y=2. LHS=9, RHS=5. 9≠5.
+- (c)[2m] Area model: square side (x+y) → x², xy, xy, y² → x²+2xy+y². Or multiplication frame.
+
+Q3 [2m]: Teach 5−(−2)=7 with algebra discs.
+- [1m] 5 pos discs. Need to remove 2 neg — none exist. Add 2 zero pairs → 7 pos, 2 neg.
+- [1m] Remove 2 neg → 7 pos = 7. Subtracting neg = adding pos. Concept 5.
+
+Q4 [2m]: Student writes −3−4=1. Error + concrete fix.
+- [1m] Error: computed 4−3=1, ignoring negative sign.
+- [1m] Discs: 3 neg. Sub 4 pos → add 4 zero pairs → remove 4 pos → 7 neg = −7. Concept 4.
+
+Q5 [1m]: HCF(6,12)=6 → "HCF always smaller." Fix?
+- Counter-example: HCF(4,7)=1. Bad first example creates misconception.
+
+Q6 [2m]: Why not PPT for WEs?
+- [1m] Fixed pace, can't question at steps, undermines constructivism.
+- [1m] Whiteboard: step-by-step, pause, question. Supports "we do one, you do more."
+
+Q7 [2m]: Skemp + percentages example.
+- [1m] Instrumental: computes 20% of 150=30 by rule, stuck when format changes.
+- [1m] Relational: understands "per hundred," proportional reasoning, can reconstruct.
+
+Q8 [2m]: Develop gradient concept Sec 1 + WEs.
+- [1m] Same horizontal, different vertical → rise/run. Guided discovery.
+- [1m] WE1:origin → WE2:Q1 pos → WE3:neg → WE4:neg coords. Practice after each.
+
+Q9 [3m]: Backhouse classify: BODMAS, Pythagoras, long division.
+- (i)[1m] Convention — just tell. No "why."
+- (ii)[1m] Result — prove/derive.
+- (iii)[1m] Technique — demo with WEs.
+
+Q10 [2m]: y=(x+1)(x+5), student says x-ints are 1 and 5.
+- [1m] Read off constants without solving. Correct: x=−1, x=−5.
+- [1m] Don't teach "intercepts are h,k." Always solve=0.
