@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PCK Study Tool</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV BAR -->
+<nav class="nav">
+  <div class="nav-title">
+    <div class="logo-mark">P</div>
+    <div class="title-text">PCK Study <span>Tool</span></div>
+  </div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" data-mode="browse">Browse</button>
+    <button class="nav-tab" data-mode="flashcards">Flashcards</button>
+    <button class="nav-tab" data-mode="quiz">Quiz</button>
+  </div>
+</nav>
+
+<!-- MODE 1: BROWSE — Card Wall -->
+<div id="mode-browse" class="browse active">
+  <div class="search-wrap">
+    <span class="search-icon">&#x1F50D;</span>
+    <input type="text" class="search-input" id="browse-search" placeholder="Search notes, concepts, definitions...">
+    <span class="search-hint">/</span>
+  </div>
+
+  <!-- Chapter tags -->
+  <div class="tag-bar" id="chapter-tags"></div>
+
+  <div class="results-count" id="results-count"></div>
+
+  <div class="card-grid" id="card-grid"></div>
+</div>
+
+<!-- MODE 2: FLASHCARDS -->
+<div id="mode-flashcards" class="flashcards">
+  <div class="fc-header">
+    <div class="fc-controls">
+      <select id="fc-topic-filter">
+        <option value="all">All Topics</option>
+      </select>
+      <span class="fc-counter" id="fc-counter"></span>
+      <span class="fc-mastered" id="fc-mastered"></span>
+    </div>
+    <div class="fc-progress-bar"><div class="fc-progress-fill" id="fc-progress"></div></div>
+  </div>
+
+  <div class="fc-card" id="fc-card">
+    <div class="fc-topic-tag" id="fc-topic-tag"></div>
+    <div class="fc-front-text" id="fc-front"></div>
+    <div class="fc-hint">click to flip</div>
+    <div class="fc-back-text" id="fc-back"></div>
+  </div>
+
+  <div class="fc-rating" id="fc-rating">
+    <button class="btn-rating rating-again" id="fc-again" data-tooltip="Show again in 2 cards">Again</button>
+    <button class="btn-rating rating-hard" id="fc-hard" data-tooltip="Show again in 4 cards">Hard</button>
+    <button class="btn-rating rating-good" id="fc-good" data-tooltip="Show again in 8 cards">Good</button>
+    <button class="btn-rating rating-easy" id="fc-easy" data-tooltip="Show again in 16 cards · ×2 = mastered">Easy</button>
+  </div>
+
+  <div class="fc-nav">
+    <button class="btn-ghost" id="fc-skip">Skip</button>
+    <button class="btn-ghost" id="fc-reset">Reset</button>
+  </div>
+</div>
+
+<!-- MODE 3: QUIZ -->
+<div id="mode-quiz" class="quiz">
+  <div class="quiz-header">
+    <div class="quiz-controls">
+      <select id="quiz-topic-filter">
+        <option value="all">All Topics</option>
+      </select>
+      <span class="quiz-counter" id="quiz-counter"></span>
+    </div>
+    <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-progress"></div></div>
+  </div>
+
+  <div id="quiz-area"></div>
+</div>
+
+<script src="js/notes-data.js"></script>
+<script src="js/flashcard-data.js"></script>
+<script src="js/quiz-data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
