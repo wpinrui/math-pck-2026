@@ -27,15 +27,9 @@
     return dp[m][n];
   }
 
-  /* ── Utility: Simple fuzzy match (case-insensitive substring) ── */
-  function fuzzyMatch(text, query) {
-    if (!query) return true;
-    var t = text.toLowerCase();
-    var words = query.toLowerCase().split(/\s+/).filter(Boolean);
-    for (var i = 0; i < words.length; i++) {
-      if (t.indexOf(words[i]) === -1) return false;
-    }
-    return true;
+  /* ── Utility: Normalize text for search (lowercase, strip hyphens/punctuation, collapse whitespace) ── */
+  function searchNormalize(s) {
+    return s.toLowerCase().replace(/[-\/\\.,;:!?'"()[\]{}]/g, '').replace(/\s+/g, ' ').trim();
   }
 
   /* ── Utility: Strip HTML tags for search ── */
@@ -43,6 +37,14 @@
     var tmp = document.createElement('div');
     tmp.innerHTML = html;
     return tmp.textContent || tmp.innerText || '';
+  }
+
+  /* ── Utility: Check if query word matches any word in a word list (substring match, no edit distance) ── */
+  function wordFuzzyMatch(queryWord, targetWords) {
+    for (var i = 0; i < targetWords.length; i++) {
+      if (targetWords[i].indexOf(queryWord) !== -1) return true;
+    }
+    return false;
   }
 
   /* ── Utility: Get searchable text from a note ── */
@@ -62,6 +64,50 @@
       c.forEach(function (item) { parts.push(stripHtml(item)); });
     }
     return parts.join(' ');
+  }
+
+  /* ── Utility: Get normalized tag words from a note ── */
+  function getNoteTags(note) {
+    if (!note.tags || !note.tags.length) return [];
+    return note.tags.map(function (t) { return searchNormalize(t); });
+  }
+
+  /* ── Search: Score a note against a query. Returns 0 (no match) or positive score (higher = better match) ── */
+  function scoreNote(note, queryWords) {
+    if (!queryWords.length) return 1; // no query = show all, equal score
+    var tagText = getNoteTags(note);
+    var tagWords = tagText.join(' ').split(/\s+/).filter(Boolean);
+    var contentText = searchNormalize(getNoteSearchText(note));
+    var contentWords = contentText.split(/\s+/).filter(Boolean);
+    var score = 0;
+    for (var i = 0; i < queryWords.length; i++) {
+      var qw = queryWords[i];
+      var matched = false;
+      // Check tags first (higher weight)
+      // Exact tag-level match (query matches a full normalized tag)
+      for (var t = 0; t < tagText.length; t++) {
+        if (tagText[t] === qw || tagText[t].indexOf(qw) !== -1) {
+          score += 10;
+          matched = true;
+          break;
+        }
+      }
+      if (!matched && wordFuzzyMatch(qw, tagWords)) {
+        score += 5;
+        matched = true;
+      }
+      // Check content (lower weight)
+      if (!matched && contentText.indexOf(qw) !== -1) {
+        score += 3;
+        matched = true;
+      }
+      if (!matched && wordFuzzyMatch(qw, contentWords)) {
+        score += 1;
+        matched = true;
+      }
+      if (!matched) return 0; // all query words must match something
+    }
+    return score;
   }
 
   /* ══════════════════════════════════════════
@@ -96,12 +142,10 @@
      BROWSE MODE
      ══════════════════════════════════════════ */
 
-  var activeChapters = new Set();
-  var activeTypes = new Set();
+  var activeChapter = null;
 
   function initBrowse() {
     buildChapterTags();
-    buildTypeTags();
     renderCards();
 
     document.getElementById('browse-search').addEventListener('input', function () {
@@ -120,38 +164,14 @@
       btn.setAttribute('data-chapter', ch);
       btn.textContent = CHAPTER_LABELS[ch];
       btn.addEventListener('click', function () {
-        if (activeChapters.has(ch)) {
-          activeChapters.delete(ch);
+        if (activeChapter === ch) {
+          activeChapter = null;
           btn.classList.remove('active');
         } else {
-          activeChapters.add(ch);
-          btn.classList.add('active');
-        }
-        renderCards();
-      });
-      container.appendChild(btn);
-    });
-  }
-
-  function buildTypeTags() {
-    var container = document.getElementById('type-tags');
-    container.innerHTML = '';
-    /* Only show types that actually exist in the data */
-    var existingTypes = new Set();
-    NOTES.forEach(function (n) { existingTypes.add(n.type); });
-    var types = CARD_TYPES.filter(function (t) { return existingTypes.has(t); });
-    types.forEach(function (type) {
-      var btn = document.createElement('button');
-      btn.className = 'tag-pill';
-      btn.setAttribute('data-type', '');
-      btn.setAttribute('data-type-value', type);
-      btn.textContent = type.charAt(0).toUpperCase() + type.slice(1);
-      btn.addEventListener('click', function () {
-        if (activeTypes.has(type)) {
-          activeTypes.delete(type);
-          btn.classList.remove('active');
-        } else {
-          activeTypes.add(type);
+          /* Deselect previous */
+          var prev = container.querySelector('.tag-pill.active');
+          if (prev) prev.classList.remove('active');
+          activeChapter = ch;
           btn.classList.add('active');
         }
         renderCards();
@@ -162,12 +182,19 @@
 
   function filterNotes() {
     var query = document.getElementById('browse-search').value.trim();
-    return NOTES.filter(function (note) {
-      if (activeChapters.size > 0 && !activeChapters.has(note.chapter)) return false;
-      if (activeTypes.size > 0 && !activeTypes.has(note.type)) return false;
-      if (query && !fuzzyMatch(getNoteSearchText(note), query)) return false;
-      return true;
-    });
+    var queryWords = query ? searchNormalize(query).split(/\s+/).filter(Boolean) : [];
+    var scored = [];
+    for (var i = 0; i < NOTES.length; i++) {
+      var note = NOTES[i];
+      if (activeChapter && note.chapter !== activeChapter) continue;
+      var s = scoreNote(note, queryWords);
+      if (s > 0) scored.push({ note: note, score: s });
+    }
+    // Sort by score descending when there's a query, otherwise keep original order
+    if (queryWords.length) {
+      scored.sort(function (a, b) { return b.score - a.score; });
+    }
+    return scored.map(function (item) { return item.note; });
   }
 
   function renderCards() {
@@ -306,67 +333,182 @@
   }
 
   /* ══════════════════════════════════════════
-     FLASHCARD MODE
+     FLASHCARD MODE — Spaced Repetition Drill
      ══════════════════════════════════════════ */
 
-  var fcState = {
-    deck: [],
-    index: 0,
+  var FC_STORAGE_KEY = 'pck-drill-state';
+
+  var fcDrill = {
+    primaryQueue: [],    /* [{cardId, easyCount}] */
+    secondaryQueue: [],  /* [{cardId, easyCount}] */
+    masteredCount: 0,
+    totalCards: 0,
+    topicFilter: 'all',
     flipped: false
   };
 
-  function initFlashcards() {
-    populateFcFilter();
-    rebuildFcDeck();
-    renderFlashcard();
+  function fcSaveState() {
+    try {
+      localStorage.setItem(FC_STORAGE_KEY, JSON.stringify({
+        primaryQueue: fcDrill.primaryQueue,
+        secondaryQueue: fcDrill.secondaryQueue,
+        masteredCount: fcDrill.masteredCount,
+        totalCards: fcDrill.totalCards,
+        topicFilter: fcDrill.topicFilter
+      }));
+    } catch (e) {}
+  }
 
-    document.getElementById('fc-card').addEventListener('click', function () {
-      fcState.flipped = !fcState.flipped;
-      this.classList.toggle('flipped', fcState.flipped);
-    });
+  function fcLoadState() {
+    try {
+      var raw = localStorage.getItem(FC_STORAGE_KEY);
+      if (!raw) return false;
+      var data = JSON.parse(raw);
+      fcDrill.primaryQueue = data.primaryQueue || [];
+      fcDrill.secondaryQueue = data.secondaryQueue || [];
+      fcDrill.masteredCount = data.masteredCount || 0;
+      fcDrill.totalCards = data.totalCards || 0;
+      fcDrill.topicFilter = data.topicFilter || 'all';
+      return true;
+    } catch (e) { return false; }
+  }
 
-    document.getElementById('fc-next').addEventListener('click', function () {
-      if (fcState.deck.length === 0) return;
-      fcState.index = (fcState.index + 1) % fcState.deck.length;
-      fcState.flipped = false;
-      renderFlashcard();
-    });
+  function fcBuildDeck() {
+    var filter = fcDrill.topicFilter;
+    var cards = filter === 'all'
+      ? FLASHCARDS.slice()
+      : FLASHCARDS.filter(function (fc) { return fc.chapter === filter; });
+    fcDrill.totalCards = cards.length;
+    fcDrill.primaryQueue = cards.map(function (fc) { return { cardId: fc.id, easyCount: 0 }; });
+    fcDrill.secondaryQueue = [];
+    fcDrill.masteredCount = 0;
+  }
 
-    document.getElementById('fc-prev').addEventListener('click', function () {
-      if (fcState.deck.length === 0) return;
-      fcState.index = (fcState.index - 1 + fcState.deck.length) % fcState.deck.length;
-      fcState.flipped = false;
-      renderFlashcard();
-    });
+  function fcGetCard(id) {
+    for (var i = 0; i < FLASHCARDS.length; i++) {
+      if (FLASHCARDS[i].id === id) return FLASHCARDS[i];
+    }
+    return null;
+  }
 
-    document.getElementById('fc-shuffle').addEventListener('click', function () {
-      shuffleDeck();
-      fcState.index = 0;
-      fcState.flipped = false;
-      renderFlashcard();
-    });
+  function fcInsertAt(entry, position) {
+    var pos = Math.min(position, fcDrill.primaryQueue.length);
+    fcDrill.primaryQueue.splice(pos, 0, entry);
+  }
 
-    document.getElementById('fc-topic-filter').addEventListener('change', function () {
-      rebuildFcDeck();
-      renderFlashcard();
-    });
+  function fcPromoteIfNeeded() {
+    if (fcDrill.primaryQueue.length === 0 && fcDrill.secondaryQueue.length > 0) {
+      fcDrill.primaryQueue = fcDrill.secondaryQueue.slice();
+      fcDrill.secondaryQueue = [];
+    }
+  }
 
-    /* Keyboard: arrows for prev/next, space to flip */
-    document.addEventListener('keydown', function (e) {
-      var fcSection = document.getElementById('mode-flashcards');
-      if (!fcSection.classList.contains('active')) return;
-      if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA' || document.activeElement.tagName === 'SELECT') return;
-      if (e.key === 'ArrowRight') { document.getElementById('fc-next').click(); }
-      else if (e.key === 'ArrowLeft') { document.getElementById('fc-prev').click(); }
-      else if (e.key === ' ') { e.preventDefault(); document.getElementById('fc-card').click(); }
-    });
+  function fcRate(rating) {
+    if (fcDrill.primaryQueue.length === 0) return;
+    var entry = fcDrill.primaryQueue.shift();
+
+    if (rating === 'easy') {
+      entry.easyCount = (entry.easyCount || 0) + 1;
+      if (entry.easyCount >= 2) {
+        fcDrill.masteredCount++;
+      } else {
+        fcInsertAt(entry, 16);
+      }
+    } else {
+      var positions = { again: 2, hard: 4, good: 8 };
+      fcInsertAt(entry, positions[rating]);
+    }
+
+    fcPromoteIfNeeded();
+    fcDrill.flipped = false;
+    fcSaveState();
+    renderFcDrill();
+  }
+
+  function fcSkip() {
+    if (fcDrill.primaryQueue.length === 0) return;
+    var entry = fcDrill.primaryQueue.shift();
+    fcDrill.secondaryQueue.push(entry);
+    fcPromoteIfNeeded();
+    fcDrill.flipped = false;
+    fcSaveState();
+    renderFcDrill();
+  }
+
+  function fcReset() {
+    try { localStorage.removeItem(FC_STORAGE_KEY); } catch (e) {}
+    fcBuildDeck();
+    fcDrill.flipped = false;
+    fcSaveState();
+    renderFcDrill();
+  }
+
+  function renderFcDrill() {
+    var card = document.getElementById('fc-card');
+    var front = document.getElementById('fc-front');
+    var back = document.getElementById('fc-back');
+    var tag = document.getElementById('fc-topic-tag');
+    var counter = document.getElementById('fc-counter');
+    var mastered = document.getElementById('fc-mastered');
+    var progress = document.getElementById('fc-progress');
+    var ratingRow = document.getElementById('fc-rating');
+    var skipBtn = document.getElementById('fc-skip');
+
+    var isDone = fcDrill.totalCards > 0 &&
+      fcDrill.primaryQueue.length === 0 &&
+      fcDrill.secondaryQueue.length === 0;
+
+    var pct = fcDrill.totalCards > 0 ? (fcDrill.masteredCount / fcDrill.totalCards * 100) : 0;
+    progress.style.width = pct + '%';
+
+    if (fcDrill.totalCards === 0) {
+      card.classList.remove('flipped');
+      front.textContent = 'No flashcards for this topic.';
+      back.innerHTML = '';
+      tag.textContent = '';
+      counter.textContent = '0 remaining';
+      mastered.textContent = '';
+      ratingRow.style.display = 'none';
+      skipBtn.style.visibility = 'hidden';
+      return;
+    }
+
+    if (isDone) {
+      card.classList.remove('flipped');
+      front.textContent = 'All ' + fcDrill.totalCards + ' cards mastered!';
+      back.innerHTML = '';
+      tag.textContent = '';
+      counter.textContent = '0 remaining';
+      mastered.textContent = fcDrill.masteredCount + '/' + fcDrill.totalCards + ' mastered';
+      ratingRow.style.display = 'none';
+      skipBtn.style.visibility = 'hidden';
+      return;
+    }
+
+    var entry = fcDrill.primaryQueue[0];
+    var fc = fcGetCard(entry.cardId);
+    if (!fc) return;
+
+    var remaining = fcDrill.primaryQueue.length + fcDrill.secondaryQueue.length;
+    counter.textContent = remaining + ' remaining';
+    mastered.textContent = fcDrill.masteredCount + '/' + fcDrill.totalCards + ' mastered';
+
+    card.classList.toggle('flipped', fcDrill.flipped);
+    front.textContent = fc.front;
+    back.innerHTML = fc.back;
+    tag.textContent = CHAPTER_LABELS[fc.chapter] || fc.chapter;
+
+    ratingRow.style.display = fcDrill.flipped ? 'flex' : 'none';
+    skipBtn.style.visibility = '';
   }
 
   function populateFcFilter() {
     var select = document.getElementById('fc-topic-filter');
     select.innerHTML = '<option value="all">All Topics</option>';
-    var chapters = new Set();
-    FLASHCARDS.forEach(function (fc) { chapters.add(fc.chapter); });
+    var chapters = [];
+    FLASHCARDS.forEach(function (fc) {
+      if (chapters.indexOf(fc.chapter) === -1) chapters.push(fc.chapter);
+    });
     chapters.forEach(function (ch) {
       var opt = document.createElement('option');
       opt.value = ch;
@@ -375,50 +517,48 @@
     });
   }
 
-  function rebuildFcDeck() {
-    var filter = document.getElementById('fc-topic-filter').value;
-    if (filter === 'all') {
-      fcState.deck = FLASHCARDS.slice();
-    } else {
-      fcState.deck = FLASHCARDS.filter(function (fc) { return fc.chapter === filter; });
-    }
-    fcState.index = 0;
-    fcState.flipped = false;
-  }
+  function initFlashcards() {
+    populateFcFilter();
 
-  function shuffleDeck() {
-    var arr = fcState.deck;
-    for (var i = arr.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
-    }
-  }
-
-  function renderFlashcard() {
-    var card = document.getElementById('fc-card');
-    var front = document.getElementById('fc-front');
-    var back = document.getElementById('fc-back');
-    var tag = document.getElementById('fc-topic-tag');
-    var counter = document.getElementById('fc-counter');
-    var progress = document.getElementById('fc-progress');
-
-    card.classList.remove('flipped');
-
-    if (fcState.deck.length === 0) {
-      front.textContent = 'No flashcards available';
-      back.innerHTML = '';
-      tag.textContent = '';
-      counter.textContent = '0 of 0';
-      progress.style.width = '0%';
-      return;
+    var loaded = fcLoadState();
+    if (!loaded) {
+      fcBuildDeck();
+      fcSaveState();
     }
 
-    var fc = fcState.deck[fcState.index];
-    front.textContent = fc.front;
-    back.innerHTML = fc.back;
-    tag.textContent = CHAPTER_LABELS[fc.chapter] || fc.chapter;
-    counter.textContent = (fcState.index + 1) + ' of ' + fcState.deck.length;
-    progress.style.width = ((fcState.index + 1) / fcState.deck.length * 100) + '%';
+    document.getElementById('fc-topic-filter').value = fcDrill.topicFilter;
+
+    renderFcDrill();
+
+    document.getElementById('fc-card').addEventListener('click', function () {
+      if (fcDrill.primaryQueue.length === 0) return;
+      fcDrill.flipped = !fcDrill.flipped;
+      renderFcDrill();
+    });
+
+    document.getElementById('fc-again').addEventListener('click', function () { fcRate('again'); });
+    document.getElementById('fc-hard').addEventListener('click', function () { fcRate('hard'); });
+    document.getElementById('fc-good').addEventListener('click', function () { fcRate('good'); });
+    document.getElementById('fc-easy').addEventListener('click', function () { fcRate('easy'); });
+
+    document.getElementById('fc-skip').addEventListener('click', fcSkip);
+    document.getElementById('fc-reset').addEventListener('click', fcReset);
+
+    document.getElementById('fc-topic-filter').addEventListener('change', function () {
+      fcDrill.topicFilter = this.value;
+      fcBuildDeck();
+      fcDrill.flipped = false;
+      fcSaveState();
+      renderFcDrill();
+    });
+
+    /* Keyboard: space to flip */
+    document.addEventListener('keydown', function (e) {
+      var fcSection = document.getElementById('mode-flashcards');
+      if (!fcSection.classList.contains('active')) return;
+      if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA' || document.activeElement.tagName === 'SELECT') return;
+      if (e.key === ' ') { e.preventDefault(); document.getElementById('fc-card').click(); }
+    });
   }
 
   /* ══════════════════════════════════════════

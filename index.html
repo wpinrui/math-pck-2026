@@ -33,8 +33,6 @@
 
   <!-- Chapter tags -->
   <div class="tag-bar" id="chapter-tags"></div>
-  <!-- Type tags -->
-  <div class="tag-bar" id="type-tags"></div>
 
   <div class="results-count" id="results-count"></div>
 
@@ -49,7 +47,7 @@
         <option value="all">All Topics</option>
       </select>
       <span class="fc-counter" id="fc-counter"></span>
-      <button class="btn-ghost" id="fc-shuffle">Shuffle</button>
+      <span class="fc-mastered" id="fc-mastered"></span>
     </div>
     <div class="fc-progress-bar"><div class="fc-progress-fill" id="fc-progress"></div></div>
   </div>
@@ -61,9 +59,16 @@
     <div class="fc-back-text" id="fc-back"></div>
   </div>
 
+  <div class="fc-rating" id="fc-rating">
+    <button class="btn-rating rating-again" id="fc-again">Again</button>
+    <button class="btn-rating rating-hard" id="fc-hard">Hard</button>
+    <button class="btn-rating rating-good" id="fc-good">Good</button>
+    <button class="btn-rating rating-easy" id="fc-easy">Easy</button>
+  </div>
+
   <div class="fc-nav">
-    <button class="btn-secondary" id="fc-prev">&larr; Prev</button>
-    <button class="btn-primary" id="fc-next">Next &rarr;</button>
+    <button class="btn-ghost" id="fc-skip">Skip</button>
+    <button class="btn-ghost" id="fc-reset">Reset</button>
   </div>
 </div>
 

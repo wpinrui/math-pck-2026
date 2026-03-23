@@ -358,6 +358,10 @@ body {
   line-height: 1.65;
 }
 .card-body strong { color: var(--text); }
+.card-body ol, .card-body ul {
+  margin: 0 0 0.5em;
+  padding-left: 1.5em;
+}
 
 /* ── Card type: Definition ── */
 .card-term {
@@ -659,6 +663,42 @@ select:hover, select:focus { border-color: var(--accent-mid); outline: none; }
   border-radius: 50%;
   background: var(--surface-3);
 }
+
+.fc-mastered {
+  font-size: 0.8rem;
+  color: var(--correct);
+  font-variant-numeric: tabular-nums;
+}
+
+.fc-rating {
+  display: none;
+  gap: 10px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 520px;
+  width: 100%;
+}
+
+.btn-rating {
+  padding: 9px 20px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.01em;
+}
+.btn-rating:hover { transform: translateY(-1px); }
+
+.rating-again { background: var(--wrong-dim); color: var(--wrong); border: 1px solid rgba(248,113,113,0.2); }
+.rating-again:hover { background: rgba(248,113,113,0.2); }
+.rating-hard  { background: rgba(251,191,36,0.10); color: var(--close); border: 1px solid rgba(251,191,36,0.2); }
+.rating-hard:hover  { background: rgba(251,191,36,0.20); }
+.rating-good  { background: var(--correct-dim); color: var(--correct); border: 1px solid rgba(52,211,153,0.2); }
+.rating-good:hover  { background: rgba(52,211,153,0.20); }
+.rating-easy  { background: var(--accent-dim); color: var(--accent); border: 1px solid rgba(129,140,248,0.2); }
+.rating-easy:hover  { background: var(--accent-mid); }
 
 .btn-primary {
   background: transparent;
