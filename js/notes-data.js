@@ -49,7 +49,7 @@ var NOTES = [
   // ===== L1 — Singapore Mathematics Curriculum =====
 
   {
-    id: 'L2-01',
+    id: 'L1-01',
     title: 'Four Curriculum Types',
     chapter: 'L1',
     type: 'definition',
@@ -63,7 +63,7 @@ var NOTES = [
   },
 
   {
-    id: 'L2-02',
+    id: 'L1-02',
     title: 'Curriculum Development Cycle',
     chapter: 'L1',
     type: 'concept',
@@ -73,7 +73,7 @@ var NOTES = [
   },
 
   {
-    id: 'L2-03',
+    id: 'L1-03',
     title: 'Spiral Curriculum & Connected Syllabuses',
     chapter: 'L1',
     type: 'concept',
@@ -87,7 +87,7 @@ var NOTES = [
   },
 
   {
-    id: 'L2-04',
+    id: 'L1-04',
     title: 'Goals, Orientations & Aims',
     chapter: 'L1',
     type: 'concept',
@@ -103,20 +103,24 @@ var NOTES = [
   },
 
   {
-    id: 'L2-05',
+    id: 'L1-05',
     title: 'Nature of Mathematics \u2014 PORA Themes',
     chapter: 'L1',
-    type: 'list',
+    type: 'table',
     tags: ["PORA","nature of mathematics","properties and relationships","operations and algorithms","representations and communications","abstractions and applications","PORA themes","concepts","skills","processes","mathematical themes","big ideas","curriculum themes"],
-    content: '<table class="card-table"><tr><th>Theme</th><th>Category</th></tr>' +
-      '<tr><td><strong>P</strong>roperties &amp; Relationships</td><td>Concepts</td></tr>' +
-      '<tr><td><strong>O</strong>perations &amp; Algorithms</td><td>Skills</td></tr>' +
-      '<tr><td><strong>R</strong>epresentations &amp; Communications</td><td>Processes</td></tr>' +
-      '<tr><td><strong>A</strong>bstractions &amp; Applications</td><td>Processes</td></tr></table>'
+    content: {
+      headers: ['Theme', 'Category'],
+      rows: [
+        ['<strong>P</strong>roperties &amp; Relationships', 'Concepts'],
+        ['<strong>O</strong>perations &amp; Algorithms', 'Skills'],
+        ['<strong>R</strong>epresentations &amp; Communications', 'Processes'],
+        ['<strong>A</strong>bstractions &amp; Applications', 'Processes']
+      ]
+    }
   },
 
   {
-    id: 'L2-06',
+    id: 'L1-06',
     title: '8 Big Ideas (Secondary)',
     chapter: 'L1',
     type: 'list',
@@ -132,7 +136,7 @@ var NOTES = [
   },
 
   {
-    id: 'L2-07',
+    id: 'L1-07',
     title: 'What is a Mathematical Problem?',
     chapter: 'L1',
     type: 'definition',
@@ -145,7 +149,7 @@ var NOTES = [
   },
 
   {
-    id: 'L2-08',
+    id: 'L1-08',
     title: 'P\u00F3lya\'s Problem-Solving Strategy',
     chapter: 'L1',
     type: 'list',
@@ -160,7 +164,7 @@ var NOTES = [
   },
 
   {
-    id: 'L2-09',
+    id: 'L1-09',
     title: 'Four Modes of Learning Maths',
     chapter: 'L1',
     type: 'table',
@@ -177,7 +181,7 @@ var NOTES = [
   },
 
   {
-    id: 'L2-10',
+    id: 'L1-10',
     title: 'Heuristics (Taught Explicitly)',
     chapter: 'L1',
     type: 'list',
@@ -195,7 +199,7 @@ var NOTES = [
   },
 
   {
-    id: 'L2-11',
+    id: 'L1-11',
     title: 'Syllabus Organisation',
     chapter: 'L1',
     type: 'concept',
@@ -208,7 +212,7 @@ var NOTES = [
   // ===== L2 — Teaching Approaches & Learning Theories =====
 
   {
-    id: 'L1-01',
+    id: 'L2-01',
     title: 'Core Teaching Philosophy',
     chapter: 'L2',
     type: 'principle',
@@ -217,7 +221,7 @@ var NOTES = [
   },
 
   {
-    id: 'L1-02',
+    id: 'L2-02',
     title: 'Skemp\'s Two Types of Understanding (1976)',
     chapter: 'L2',
     type: 'definition',
@@ -233,7 +237,7 @@ var NOTES = [
   },
 
   {
-    id: 'L1-03',
+    id: 'L2-03',
     title: 'Constructivism (Piaget)',
     chapter: 'L2',
     type: 'concept',
@@ -248,7 +252,7 @@ var NOTES = [
   },
 
   {
-    id: 'L1-04',
+    id: 'L2-04',
     title: 'Skemp\'s Principle of Learning Maths (1987)',
     chapter: 'L2',
     type: 'principle',
@@ -261,7 +265,7 @@ var NOTES = [
   },
 
   {
-    id: 'L1-05',
+    id: 'L2-05',
     title: 'Guided-Discovery Learning (Bruner)',
     chapter: 'L2',
     type: 'concept',
@@ -274,7 +278,7 @@ var NOTES = [
   },
 
   {
-    id: 'L1-06',
+    id: 'L2-06',
     title: 'Teaching Processes & Heuristics',
     chapter: 'L2',
     type: 'concept',
@@ -287,7 +291,7 @@ var NOTES = [
   },
 
   {
-    id: 'L1-07',
+    id: 'L2-07',
     title: 'Metacognition',
     chapter: 'L2',
     type: 'definition',
@@ -301,7 +305,7 @@ var NOTES = [
   },
 
   {
-    id: 'L1-08',
+    id: 'L2-08',
     title: 'Pentagon Model (2020)',
     chapter: 'L2',
     type: 'concept',
